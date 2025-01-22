@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    max-width: 1440px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1339px) {
+    .main{
+        background-color: yellow;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box{
+        background-color: blue;
+        width: 400px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .main{
+        background-color: red;
+        flex-wrap: wrap;
+    }
+    .box{
+        background-color: black;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .main{
+        background-color: yellow;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box{
+        background-color: blue;
+        width: 300px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .main{
+        background-color: purple;
+        gap: 10px;
+    }
+    .box{
+        background-color:orange;
+    }
+}
